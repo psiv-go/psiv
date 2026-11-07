@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dftid04qm0g5a"]
+
+[ext_resource type="Script" uid="uid://bueo8di5pgfjq" path="res://scripts/gun_fire.gd" id="1_x77fm"]
+
+[node name="gun" type="Node2D" unique_id=814389630]
+script = ExtResource("1_x77fm")
+gun_power = 1000.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=814020697]
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 41.0
+offset_bottom = 6.0
+color = Color(0.044668064, 0.10085737, 0.22111657, 1)

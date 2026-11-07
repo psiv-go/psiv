@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cu5nl3emeuudf"]
+
+[ext_resource type="Script" uid="uid://cd2jbrtm8jrvn" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://dt6dvpjrwjrnp" path="res://scripts/hands.gd" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://dftid04qm0g5a" path="res://scenes/gun.tscn" id="3_dqkch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(64, 64)
+
+[node name="player" type="CharacterBody2D" unique_id=820902130]
+collision_layer = 2
+script = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1053228431]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=164362845]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="Hands" type="Node2D" parent="." unique_id=1403931768]
+script = ExtResource("2_qhqgy")
+
+[node name="gun" parent="Hands" unique_id=814389630 instance=ExtResource("3_dqkch")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1438828873]

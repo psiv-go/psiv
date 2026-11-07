@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dbfsm4wssd74"]
+
+[ext_resource type="Script" uid="uid://46sxihbjqy1i" path="res://scripts/fps_label.gd" id="1_8sdj4"]
+[ext_resource type="Script" uid="uid://bsrdsvrk0716e" path="res://scripts/score.gd" id="2_26xli"]
+[ext_resource type="Script" uid="uid://dq8c6da726bcv" path="res://scripts/high_score.gd" id="3_b7gvj"]
+
+[node name="info_label" type="CanvasLayer" unique_id=1356198853]
+
+[node name="fps" type="RichTextLabel" parent="." unique_id=1375845653]
+offset_right = 329.0
+offset_bottom = 23.0
+bbcode_enabled = true
+text = "FPS: "
+script = ExtResource("1_8sdj4")
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=568585910]
+offset_top = 23.0
+offset_right = 270.0
+offset_bottom = 46.0
+text = "Score: "
+script = ExtResource("2_26xli")
+
+[node name="HighScore" type="RichTextLabel" parent="." unique_id=1430646977]
+offset_top = 46.0
+offset_right = 257.0
+offset_bottom = 69.0
+text = "HighScore:"
+script = ExtResource("3_b7gvj")

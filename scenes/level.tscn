@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c7kj7losp5wsd"]
+
+[ext_resource type="Script" uid="uid://cqd7vb6ogwgmj" path="res://scripts/level.gd" id="1_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://ds4o58l5e6ruj" path="res://scenes/location.tscn" id="2_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://cu5nl3emeuudf" path="res://scenes/player.tscn" id="2_w8frs"]
+[ext_resource type="PackedScene" uid="uid://qjwn4lk3itpd" path="res://scenes/enemy_generator.tscn" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://dbfsm4wssd74" path="res://scenes/fps_label.tscn" id="5_ppgk2"]
+
+[node name="Node2D" type="Node2D" unique_id=1751101772]
+script = ExtResource("1_w7c3h")
+
+[node name="location" parent="." unique_id=1608557780 instance=ExtResource("2_mx8sn")]
+position = Vector2(64, 960)
+
+[node name="player" parent="." unique_id=820902130 instance=ExtResource("2_w8frs")]
+position = Vector2(1108, 1248)
+
+[node name="EnemyGenerator" parent="." unique_id=1623782514 instance=ExtResource("4_mx8sn")]
+position = Vector2(1709, 1690)
+
+[node name="EnemyGenerator2" parent="." unique_id=1116048810 instance=ExtResource("4_mx8sn")]
+position = Vector2(189, 200)
+
+[node name="FPS_Label" parent="." unique_id=1356198853 instance=ExtResource("5_ppgk2")]
